@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad • Cuentos Mágicos (Enfermería Digital MX)</title>
+  <meta name="description" content="Política de Privacidad oficial para la aplicación móvil infantil Cuentos Mágicos. Cumplimiento estricto con Google Play Families, COPPA y RGPD-K.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-dark: #3730a3;
+      --accent: #06b6d4;
+      --calm-green: #10b981;
+      --night-sky: #0f172a;
+      --slate: #334155;
+      --slate-light: #64748b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --badge-bg: #e0e7ff;
+      --badge-text: #3730a3;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--slate);
+      line-height: 1.7;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.05) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(16, 185, 129, 0.04) 0px, transparent 50%);
+      background-attachment: fixed;
+      padding: 0 16px;
+    }
+
+    .wrapper {
+      max-width: 860px;
+      margin: 36px auto 70px;
+    }
+
+    /* TOP BAR */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 20px -5px rgba(15, 23, 42, 0.05);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--night-sky);
+    }
+
+    .brand-icon {
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    .brand-name {
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+      color: var(--primary-dark);
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .brand-sub {
+      font-size: 0.78rem;
+      color: var(--slate-light);
+      display: block;
+      font-weight: 500;
+    }
+
+    .top-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    /* HERO CARD */
+    .hero-card {
+      background: linear-gradient(135deg, #312e81 0%, #1e1b4b 100%);
+      color: #ffffff;
+      padding: 44px 36px;
+      border-radius: 28px;
+      margin-bottom: 32px;
+      box-shadow: 0 20px 40px -15px rgba(30, 27, 75, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::after {
+      content: "✨";
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      font-size: 4rem;
+      opacity: 0.15;
+    }
+
+    .hero-pretitle {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.15);
+      color: #e0e7ff;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .hero-desc {
+      color: #c7d2fe;
+      font-size: 1.05rem;
+      max-width: 680px;
+    }
+
+    .meta-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.85rem;
+      color: #e0e7ff;
+    }
+
+    .meta-tag {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 5px 12px;
+      border-radius: 8px;
+    }
+
+    /* HIGHLIGHT PILLS */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .highlight-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+    }
+
+    .highlight-icon {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .highlight-title {
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--night-sky);
+      margin-bottom: 4px;
+    }
+
+    .highlight-desc {
+      font-size: 0.88rem;
+      color: var(--slate-light);
+      line-height: 1.5;
+    }
+
+    /* MAIN CONTENT */
+    .content-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 8px 30px -10px rgba(15, 23, 42, 0.04);
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--night-sky);
+      margin: 32px 0 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--slate);
+    }
+
+    ul {
+      margin: 0 0 20px 24px;
+      color: var(--slate);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .callout {
+      border-radius: 16px;
+      padding: 18px 22px;
+      margin: 22px 0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .callout-shield {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      color: #1e3a8a;
+    }
+
+    .callout-safe {
+      background: #ecfdf5;
+      border-left: 4px solid #10b981;
+      color: #064e3b;
+    }
+
+    .callout-warn {
+      background: #fffbeb;
+      border-left: 4px solid #f59e0b;
+      color: #78350f;
+    }
+
+    /* CONTACT / SUPPORT CARD */
+    .support-card {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+      color: #ffffff;
+      border-radius: 24px;
+      padding: 36px;
+      text-align: center;
+      margin-bottom: 32px;
+      box-shadow: 0 15px 35px -10px rgba(49, 46, 129, 0.3);
+    }
+
+    .support-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .support-desc {
+      color: #c7d2fe;
+      font-size: 0.98rem;
+      max-width: 560px;
+      margin: 0 auto 22px;
+    }
+
+    .email-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #ffffff;
+      color: #312e81;
+      padding: 14px 28px;
+      border-radius: 9999px;
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .email-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--slate-light);
+      padding: 24px 0 40px;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 640px) {
+      .hero-card {
+        padding: 30px 22px;
+      }
+      .hero-title {
+        font-size: 1.7rem;
+      }
+      .content-card {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- TOP NAVBAR -->
+    <header class="top-bar">
+      <a href="#" class="brand">
+        <span class="brand-icon">🌙</span>
+        <div>
+          <span class="brand-name">Cuentos Mágicos</span>
+          <span class="brand-sub">Enfermería Digital MX</span>
+        </div>
+      </a>
+      <div class="top-badge">
+        <span>🛡️</span> Google Play Familias
+      </div>
+    </header>
+
+    <!-- HERO HEADER -->
+    <section class="hero-card">
+      <div class="hero-pretitle">Protección Infantil • COPPA • RGPD-K</div>
+      <h1 class="hero-title">Política de Privacidad para Familias y Niños</h1>
+      <p class="hero-desc">
+        Garantizamos una experiencia 100% segura, serena y sin riesgos digitales para la infancia. En Cuentos Mágicos protegemos la privacidad y la inocencia de tus hijos.
+      </p>
+
+      <div class="meta-tags">
+        <span class="meta-tag">📅 Última actualización: Octubre 2026</span>
+        <span class="meta-tag">🔒 Certificación Infantil</span>
+        <span class="meta-tag">⚡ Arquitectura Offline-First</span>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHT BADGES -->
+    <div class="highlights-grid">
+      <div class="highlight-box">
+        <div class="highlight-icon">🚫</div>
+        <div class="highlight-title">Cero Datos Personales</div>
+        <div class="highlight-desc">No solicitamos nombres reales, correos, ubicación, micrófono ni fotos de los niños.</div>
+      </div>
+      <div class="highlight-box">
+        <div class="highlight-icon">🛡️</div>
+        <div class="highlight-title">Sin ID Publicitario (AAID)</div>
+        <div class="highlight-desc">No se recopila el Advertising ID de Android ni se realiza rastreo cruzado entre apps.</div>
+      </div>
+      <div class="highlight-box">
+        <div class="highlight-icon">🧮</div>
+        <div class="highlight-title">Puerta Parental (Gate)</div>
+        <div class="highlight-desc">Todas las compras y enlaces externos están protegidos por un reto matemático para adultos.</div>
+      </div>
+      <div class="highlight-box">
+        <div class="highlight-icon">📱</div>
+        <div class="highlight-title">Modo 100% Offline</div>
+        <div class="highlight-desc">Las narraciones, audios e ilustraciones están integradas localmente en el dispositivo.</div>
+      </div>
+    </div>
+
+    <!-- MAIN LEGAL DOCUMENT -->
+    <main class="content-card">
+
+      <h2>1. Compromiso Fundamental con la Niñez</h2>
+      <p>
+        En <b>Enfermería Digital MX</b>, equipo desarrollador y titular de la aplicación móvil <b>Cuentos Mágicos</b> (Acurruco: Cuentos Infantiles y Modo Sueño), consideramos que la privacidad de los menores de edad es un derecho inviolable. Nuestra aplicación ha sido diseñada desde su arquitectura para proporcionar narraciones infantiles pacíficas, acompañamiento nocturno y estimulación pedagógica sin comprometer datos personales.
+      </p>
+      <p>
+        Cumplimos rigurosamente con los más altos estándares legales e internacionales de protección de la infancia:
+      </p>
+      <ul>
+        <li><b>Ley COPPA:</b> Children's Online Privacy Protection Act (Estados Unidos).</li>
+        <li><b>RGPD-K:</b> Reglamento General de Protección de Datos para Menores de la Unión Europea.</li>
+        <li><b>Política del Programa para Familias de Google Play:</b> Diseñado para Familias (Designed for Families).</li>
+      </ul>
+
+      <div class="callout callout-shield">
+        🛡️ <b>Declaración de Seguridad Infantil:</b> Cuentos Mágicos no recopila, no solicita, no transmite y no comercializa información personal de ningún usuario menor de edad.
+      </div>
+
+      <h2>2. Declaración Explícita de NO Recopilación de Datos</h2>
+      <p>
+        Declaramos de manera explícita que <b>Cuentos Mágicos NO recopila</b>:
+      </p>
+      <ul>
+        <li>❌ <b>Nombres ni apellidos</b> de los niños.</li>
+        <li>❌ <b>Direcciones de correo electrónico</b>, números de teléfono ni identificadores de redes sociales.</li>
+        <li>❌ <b>Ubicación geográfica:</b> No se solicita acceso al GPS ni se obtienen coordenadas de red celular o Wi-Fi.</li>
+        <li>❌ <b>Grabaciones de voz:</b> La aplicación no solicita permiso de micrófono ni graba sonido ambiental o voces de los menores.</li>
+        <li>❌ <b>Cámara y Multimedia:</b> No se accede a la cámara fotográfica ni a los archivos, fotos o videos almacenados en el dispositivo.</li>
+        <li>❌ <b>Lista de Contactos o Agenda:</b> No existe acceso a la libreta de contactos del teléfono o tableta.</li>
+      </ul>
+
+      <h2>3. Declaración de NO Recopilación de ID Publicitario (AAID)</h2>
+      <p>
+        De conformidad con los requisitos obligatorios de la Política para Familias de Google Play Store:
+      </p>
+      <ul>
+        <li><b>Exclusión de AAID:</b> Nuestra aplicación <b>NO recopila el Identificador de Publicidad de Android (AAID)</b> ni ningún otro identificador persistente de dispositivos asociado a niños.</li>
+        <li><b>Prohibición de Perfiles Comerciales:</b> No se realiza elaboración de perfiles comerciales (behavioral profiling), micro-segmentación publicitaria ni remarketing.</li>
+      </ul>
+
+      <h2>4. Publicidad Infantil con Google AdMob</h2>
+      <p>
+        En la versión gratuita de la aplicación se puede mostrar publicidad no intrusiva entre cuentos bajo estrictos controles técnicos:
+      </p>
+      <ul>
+        <li><b>Redes Certificadas:</b> Únicamente se utilizan anuncios proporcionados por el SDK oficial de Google AdMob acreditado dentro del programa para familias de Google Play.</li>
+        <li><b>Tratamiento Dirigido a Niños (COPPA):</b> Todas las peticiones publicitarias se configuran forzosamente en el código de la app con el parámetro <code>TAG_FOR_CHILD_DIRECTED_TREATMENT_TRUE</code>.</li>
+        <li><b>Tratamiento para Menores de Consentimiento (RGPD):</b> Se implementa el parámetro obligatorio <code>TAG_FOR_UNDER_AGE_OF_CONSENT_TRUE</code>.</li>
+        <li><b>Clasificación G (Audiencia General):</b> La clasificación máxima de contenido publicitario admitida es <code>MAX_AD_CONTENT_RATING_G</code> (exclusivamente anuncios aptos para todas las edades).</li>
+        <li><b>Sin Publicidad (Opción Suscripción):</b> Los padres pueden adquirir la modalidad VIP para desactivar permanentemente toda la publicidad de la aplicación.</li>
+      </ul>
+
+      <h2>5. Control Parental Estricto (Parental Gate)</h2>
+      <p>
+        Para garantizar que los niños no puedan interactuar con funciones no aptas para su edad:
+      </p>
+      <div class="callout callout-safe">
+        🧮 <b>Puerta Parental Activa:</b> Cualquier acceso a enlaces externos (como esta política de privacidad), correos de soporte o pantallas de compra y suscripción en Google Play Billing requiere que un adulto resuelva previamente un reto matemático de multiplicación aleatoria.
+      </div>
+
+      <h2>6. Arquitectura Offline-First y Almacenamiento Local</h2>
+      <p>
+        Todos los cuentos, nanas, ilustraciones y audios narrados residen localmente en el paquete de la aplicación. Las preferencias seleccionadas por el usuario (cuentos favoritos, compañero avatar elegido, volumen o filtro nocturno) se almacenan exclusivamente de manera local en el almacenamiento interno privado del dispositivo (SharedPreferences) y no se comparten con ningún servidor.
+      </p>
+
+      <h2>7. Compras Integradas (Google Play Billing)</h2>
+      <p>
+        Las suscripciones o compras dentro de la aplicación se procesan íntegra y exclusivamente a través de los servidores seguros de <b>Google Play Billing</b>. Nosotros no recibimos, no procesamos ni almacenamos ningún dato financiero, número de tarjeta de crédito o información bancaria.
+      </p>
+
+      <h2>8. Derechos ARCO y Supresión de Datos</h2>
+      <p>
+        Dado que <b>Cuentos Mágicos</b> no almacena información personal ni mantiene bases de datos de usuarios en la nube, no existe información de menores sujeta a rectificación o supresión en nuestros servidores. Sin embargo, los padres y tutores pueden comunicarse en cualquier momento con nosotros para resolver cualquier inquietud sobre la seguridad de la app.
+      </p>
+
+    </main>
+
+    <!-- CONTACT / SUPPORT CARD -->
+    <section class="support-card" id="contacto">
+      <h3 class="support-title">¿Tienes preguntas sobre la privacidad de tus hijos?</h3>
+      <p class="support-desc">
+        Estamos a tu entera disposición para resolver cualquier duda sobre la seguridad y el tratamiento de datos en Cuentos Mágicos.
+      </p>
+      <a href="mailto:soporteenfermeriadigitalmx@gmail.com" class="email-pill">
+        ✉️ soporteenfermeriadigitalmx@gmail.com
+      </a>
+      <p style="margin-top: 16px; font-size: 0.85rem; color: #a5b4fc;">
+        Contacto alternativo de la cuenta: enfermeria.digital.mx@gmail.com • Respuesta en menos de 48 horas.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <b>Cuentos Mágicos: Acurruco</b> • Desarrollado con dedicación por <b>Enfermería Digital MX</b><br>
+      © 2026 Todos los derechos reservados • <a href="https://github.com/titogera-crypto/LEAME-INF-HISTORIES" target="_blank">Repositorio de Políticas</a>
+    </footer>
+
+  </div>
+
+</body>
+</html>
